@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rajsekhar Singha Roy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.css">
+</head>
+<body class="light-mode">
+    <!-- Progress bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="intro-container">
+        <div class="profile-image-container">
+          <img src="profile.jpg" alt="Your Name" class="profile-image">
+        </div>
+        <div class="intro-text-container">
+          <h1 class="name-heading">RAJSEKHAR SINGHA ROY</h1>
+          <p class="intro-tagline">Web Developer | Designer | Stock Market Enthusiast</p>
+        </div>
+      </div>
+    <!-- Theme toggle button -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="toggle-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <!-- Visitor counter -->
+    <div class="visitor-counter">
+        <span class="visitor-count">Visitor <span id="visitorCount">1</span></span>
+        <div class="visitor-animation">
+            <div class="visitor-dot"></div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger-menu">
+        <div class="hamburger" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <header>
+        <nav id="main-nav">
+            <a href="#intro" class="nav-link active">About Me</a>
+            <a href="#personal-info" class="nav-link">Personal Info</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#day-in-life" class="nav-link">My Day</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="intro" class="intro section-reveal">
+            <div>
+                <h2>Hello! I'm Rajsekhar (23BAI1321)</h2>
+                <div id="typing-text">
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="intro-text hidden">
+                    I am a passionate individual who enjoys exploring new places, getting creative, and challenging myself with technology. I love traveling and discovering new cultures, as well as expressing my creativity through my work as a Design Lead in my club. I believe that creativity is key to growth, and I am always eager to contribute my ideas and experiences to every project I am a part of.
+                </p>
+            </div>
+        </section>
+
+        <section id="personal-info" class="personal-info section-reveal">
+            <h2>Personal Info</h2>
+            <ul>
+                <li><strong>Full Name:</strong> Rajsekhar Singha Roy</li>
+                <li><strong>Date of Birth:</strong> April 11, 2005</li>
+                <li><strong>Address:</strong> New Delhi</li>
+                <li><strong>Hobbies:</strong> Reading, Traveling, Coding, Photography, Chess</li>
+                <li><strong>Languages:</strong> English, Hindi, Bengali</li>
+                <li><strong>Nationality:</strong> Indian</li>
+            </ul>
+        </section>
+
+        <section id="education" class="education section-reveal">
+            <h2>Education</h2>
+            
+            <!-- Horizontal scrollable timeline -->
+            <div class="horizontal-timeline-container">
+                <div class="year-markers">
+                    <span>2005</span>
+                    <span>2010</span>
+                    <span>2015</span>
+                    <span>2020</span>
+                    <span>2025</span>
+                </div>
+                <div class="horizontal-timeline">
+                    <div class="timeline-scroll">
+                        <!-- Timeline items -->
+                        <div class="h-timeline-item" data-year="2005-2021">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h3>2005 - 2021: Primary Education</h3>
+                                        <p>Click to reveal details</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>St. Xavier's Senior Secondary School</h3>
+                                        <p>Completed my schooling with a strong foundation in science and mathematics.</p>
+                                        <p>Boards: 94%</p>
+                                        <p>Key Achievements: Science Olympiad (State Rank 5), Red House Captain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-timeline-item" data-year="2021-2023">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h3>2021 - 2023: High School</h3>
+                                        <p>Click to reveal details</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>FIITJEE</h3>
+                                        <p>Developed strong analytical skills and interest in Computer Science.</p>
+                                        <p>Percentile: 85.5</p>
+                                        <p>Key Achievements: Math Whiz Award</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-timeline-item" data-year="2023-Present">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <h3>2023 - Present: B.Tech in CSE (AI/ML)</h3>
+                                        <p>Click to reveal details</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>VIT Chennai</h3>
+                                        <p>Pursuing Bachelor's in Computer Science with AI/ML specialization.</p>
+                                        <p>Current CGPA: 8/10</p>
+                                        <p>Activities: Cultural Club Design Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Original timeline (for mobile view) -->
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2005 - 2021: Early Education</h3>
+                        <p>Completed my schooling at St. Xavier's Senior Secondary School, developing a strong academic foundation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2021 - 2023: High School</h3>
+                        <p>Studied at FIITJEE, where I developed my interest in Computer Science Engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023 - Present: Bachelor's Degree in CSE (AI/ML)</h3>
+                        <p>Pursuing a B.Tech in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning at VIT Chennai.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-reveal">
+            <h2>Skills</h2>
+            
+            <div class="skills-tabs">
+                <button class="tab-button active" data-tab="bars">Skill Bars</button>
+                <button class="tab-button" data-tab="chart">Radar Chart</button>
+                <button class="tab-button" data-tab="cube">3D Cube</button>
+            </div>
+            
+            <div class="skill-content">
+                <!-- Skill Bars -->
+                <div class="skill-tab active" id="bars">
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Machine Learning</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Radar Chart -->
+                <div class="skill-tab" id="chart">
+                    <div class="chart-container">
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- 3D Cube -->
+                <div class="skill-tab" id="cube">
+                    <div class="cube-container">
+                        <div class="cube" id="skills-cube">
+                            <div class="cube-face front">
+                                <h3>Programming</h3>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                </ul>
+                            </div>
+                            <div class="cube-face back">
+                                <h3>Web Dev</h3>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="cube-face right">
+                                <h3>AI/ML</h3>
+                                <ul>
+                                    <li>TensorFlow</li>
+                                    <li>PyTorch</li>
+                                    <li>Scikit-learn</li>
+                                </ul>
+                            </div>
+                            <div class="cube-face left">
+                                <h3>Design</h3>
+                                <ul>
+                                    <li>Canva</li>
+                                    <li>Figma</li>
+                                    <li>Adobe XD</li>
+                                </ul>
+                            </div>
+                            <div class="cube-face top">
+                                <h3>Tools</h3>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>VS Code</li>
+                                    <li>Docker</li>
+                                </ul>
+                            </div>
+                            <div class="cube-face bottom">
+                                <h3>Soft Skills</h3>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Communication</li>
+                                    <li>Problem Solving</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cube-controls">
+                            <button id="rotate-left">←</button>
+                            <button id="rotate-right">→</button>
+                            <button id="rotate-up">↑</button>
+                            <button id="rotate-down">↓</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="day-in-life" class="day-in-life section-reveal">
+            <h2>A Day in My Life</h2>
+            <div class="day-timeline">
+                <div class="day-timeline-item">
+                    <div class="day-time">6:00 AM</div>
+                    <div class="day-event">
+                        <h4>Morning Routine</h4>
+                        <p>Wake up, meditate for 15 minutes, and go for a quick run</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">7:00 AM</div>
+                    <div class="day-event">
+                        <h4>Breakfast & Planning</h4>
+                        <p>Quick breakfast while planning the day ahead</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">8:00 AM</div>
+                    <div class="day-event">
+                        <h4>Lab Classes</h4>
+                        <p>Attend Lab lectures in 2nd Year courses curriculum</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">1:00 PM</div>
+                    <div class="day-event">
+                        <h4>Lunch Break</h4>
+                        <p>Lunch with friends, discussing project ideas</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">2:00 PM</div>
+                    <div class="day-event">
+                        <h4>Theory Classes</h4>
+                        <p>Attend evening lectures for theory classes</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">5:30 PM</div>
+                    <div class="day-event">
+                        <h4>Coding Session</h4>
+                        <p>Deep work session on personal projects and research</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">8:00 PM</div>
+                    <div class="day-event">
+                        <h4>Dinner & Relaxation</h4>
+                        <p>Dinner, followed by reading or watching tech talks</p>
+                    </div>
+                </div>
+                <div class="day-timeline-item">
+                    <div class="day-time">11:00 PM</div>
+                    <div class="day-event">
+                        <h4>Reflection & Sleep</h4>
+                        <p>Journal about the day's achievements and prepare for tomorrow</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-reveal">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project Image">
+                    </div>
+                    
+                    <h3>Automated Obstacle Avoiding Car</h3>
+                    <p>Built an Arduino-based autonomous vehicle capable of detecting and navigating around obstacles in real-time.</p>
+                    <div class="tech-stack">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>Sensors</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Project Image">
+                    </div>
+                    
+                    <h3>Network Speed & Device Monitor</h3>
+                    <p>Developed a tool that monitors network speeds and tracks connected devices for Computer Networks lab.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Wireshark API</span>
+                        <span>Data Visualization</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projectloan.jpg" alt="Project Image">
+                    </div>
+                    
+                    <h3>Student Loan Navigator</h3>
+                    <p>Developed during a hackathon, this platform simplifies the student loan process by aggregating loan options, providing personalized recommendations based on academic profile, and guiding students through the application process with step-by-step instructions.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="contact" class="contact section-reveal">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <strong>Email:</strong> rajsekharsingha.roy2023@vitstudent.ac.in</li>
+                        <li><i class="fas fa-phone"></i> <strong>Phone:</strong> +91-9988877689</li>
+                        <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rajsekhar-roy" target="_blank">LinkedIn Profile</a></li>
+                        <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/rajsekhar-dev" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="message-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="send-button">
+                            <span>Send Message</span>
+                            <div class="paper-plane">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </button>
+                    </form>
+                    <section id="contact" class="contact section-reveal">
+                        <h2>Contact Me</h2>
+                        <p>If you have any queries or want to collaborate, feel free to contact me through the form below.</p>
+                        
+                        <div class="contact-form">
+                            <a href="https://docs.google.com/forms/d/1LU7QeACz6AMznXLi4NSi7yiihe_WL5B6B4pnm6R4Moc/edit" target="_blank" class="contact-button">
+                                Fill Contact Form
+                            </a>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rajsekhar Singha Roy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
